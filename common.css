@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+}
+.headroom {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.bruno.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .bruno .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1491px 0 0;
+    width: 390px;
+    height: 49px;
+    background-color: #b42318;
+  }
+  .bruno .flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 10px;
+    margin: 10px 20px 9px;
+  }
+  .bruno .image2 {
+    width: 82px;
+    min-width: 0;
+  }
+  .bruno .flex_row1 {
+    display: flex;
+    gap: 0 12px;
+    width: 235px;
+    min-width: 0;
+  }
+  .bruno .flex_row2 {
+    display: flex;
+    gap: 0 11px;
+    width: 93px;
+    min-width: 0;
+  }
+  .bruno .info {
+    min-width: 0;
+    font: 600 10px/1.5 Roboto, Helvetica, Arial, serif;
+    color: white;
+  }
+  .bruno .info1 {
+    min-width: 0;
+    font: 600 10px/1.5 Roboto, Helvetica, Arial, serif;
+    color: white;
+    letter-spacing: -0.1px;
+  }
+  .bruno .big_title_box {
+    position: absolute;
+    top: 79px;
+    left: 57px;
+    display: flex;
+    justify-content: center;
+    width: 276px;
+    height: 87px;
+  }
+  .bruno .big_title {
+    font: 700 36px/1.2 Roboto, Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .bruno .big_title_span0 {
+    font: 700 1em/1.2 Roboto, Helvetica, Arial, serif;
+    color: #b42318;
+  }
+  .bruno .big_title_span1 {
+    font: 700 1em/1.2 Roboto, Helvetica, Arial, serif;
+  }
+  .bruno .big_title_span2 {
+    font: 700 1em/1.2 Roboto, Helvetica, Arial, serif;
+    color: #b42318;
+  }
+  .bruno .content_box2 {
+    position: absolute;
+    top: 192px;
+    left: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 362px;
+    height: 627px;
+    background-color: white;
+    border-radius: 25px;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .bruno .flex_col {
+    display: flex;
+    flex-direction: column;
+    gap: 13px 0;
+    margin: 24px 22px 22px 21px;
+  }
+  .bruno .image5 {
+    margin: 0 2px 0 0;
+    width: calc(100% - 2px);
+  }
+  .bruno .flex_col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
+    margin: 0 0 0 1px;
+  }
+  .bruno .btn {
+    display: flex;
+    justify-content: center;
+    width: 88px;
+    max-width: 100%;
+    font: 500 12px/1.16 Inter, Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+    background-color: #4c67c6;
+    padding: 4px;
+  }
+  .bruno .flex_col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  .bruno .subtitle {
+    font: 500 20px/1.14 Inter, Helvetica, Arial, serif;
+    color: black;
+  }
+  .bruno .flex_col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 29px 0;
+  }
+  .bruno .desc1 {
+    font: 500 11px/1.36 Inter, Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .bruno .flex_col4 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px 0;
+  }
+  .bruno .desc {
+    font: 400 12px/1.5 Inter, Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+    letter-spacing: -0.1px;
+  }
+  .bruno .flex_col5 {
+    display: flex;
+    flex-direction: column;
+    gap: 23px 0;
+    margin: 0 13px 0 0;
+  }
+  .bruno .flex_col6 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 2px;
+  }
+  .bruno .flex_row3 {
+    display: flex;
+    gap: 0 7px;
+  }
+  .bruno .image3 {
+    margin: 1px 0;
+    width: 12px;
+    min-width: 0;
+  }
+  .bruno .info11 {
+    min-width: 0;
+    font: 400 12px/1.25 Inter, Helvetica, Arial, serif;
+    color: black;
+  }
+  .bruno .flex_row4 {
+    display: flex;
+    gap: 0 7px;
+    margin: 14px 0 0;
+  }
+  .bruno .image4 {
+    margin: 2px 0 1px;
+    width: 12px;
+    min-width: 0;
+  }
+  .bruno .info12 {
+    min-width: 0;
+    font: 400 12px/1.25 Inter, Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .bruno .flex_row5 {
+    display: flex;
+    gap: 0 7px;
+    margin: 15px 0 0;
+  }
+  .bruno .image41 {
+    margin: 1px 0 2px;
+    width: 12px;
+    min-width: 0;
+  }
+  .bruno .btn1 {
+    display: flex;
+    justify-content: center;
+    width: 112px;
+    max-width: 100%;
+    font: 700 12px/1.16 Inter, Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+    background-color: #b42318;
+    border-radius: 18.5px;
+    padding: 11.5px 18px;
+  }
+  .bruno .content_box21 {
+    position: absolute;
+    bottom: 70px;
+    left: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 362px;
+    height: 627px;
+    background-color: white;
+    border-radius: 25px;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .bruno .flex_col7 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px 0;
+  }
+  .bruno .content_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 52px;
+    background-color: #b42318;
+  }
+  .bruno .flex_row6 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 13px 18px;
+  }
+  .bruno .image {
+    width: 95px;
+    min-width: 0;
+  }
+  .bruno .flex_row7 {
+    display: flex;
+    gap: 0 17px;
+    margin: 0 0 6px;
+    width: 94px;
+    min-width: 0;
+  }
+  .bruno .flex_row8 {
+    display: flex;
+    gap: 0 17px;
+    width: 57px;
+    min-width: 0;
+  }
+  .bruno .image1 {
+    width: 20px;
+    min-width: 0;
+  }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, figure {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    border-width: 0;
+    opacity: 1;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    align-items: normal;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sticking {
+    margin: 0 !important;
+    z-index: 10000 !important;
+}
+
+@media (max-width: 99999px) {
+    .max\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:show {
+        display: none;
+    }
+
+    .xxl\:show {
+        display: none;
+    }
+
+    .xl\:show {
+        display: none;
+    }
+
+    .lg\:show {
+        display: none;
+    }
+
+    .md\:show {
+        display: none;
+    }
+
+    .sm\:show {
+        display: none;
+    }
+
+    .xs\:show {
+        display: none;
+    }
+
+    .xxs\:show {
+        display: none;
+    }
+
+    .tn\:show {
+        display: none;
+    }
+
+    .max\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 2999px) {
+    .xxxl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1919px) {
+    .xxl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1399px) {
+    .xl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .lg\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lg\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .md\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .md\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .sm\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .xs\:show {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .xs\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .xxs\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxs\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 384px) {
+    .tn\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tn\:hide {
+        display: none;
+    }
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.hover-container:hover .subtitle,
+.hover-container:hover .desc1,
+.hover-container:hover .desc,
+.hover-container:hover .info11,
+.hover-container:hover .info12,
+.hover-container:hover .programNameSports
+{
+    color: white; /* Change text color to white on hover */
+}
+
+.content_box21:hover,
+.content_box2:hover
+ {
+    background-color: #b42318; /* Change background color on hover */
+}
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black; /* Default text color */
+}
+
+.hover-container:hover .info {
+    color: #b42318 !important; /* Change to red on hover with !important */
+}
+
+.hover-container:hover .btn1,
+.hover-container:hover .applyNowButtonInternational
+ {
+    background-color: white; /* Change background color to white on hover */
+    color: #b42318; /* Change text color to #b42318 on hover */
+}
+
+.hover-container:hover .rect2 {
+    background-color: #ffffff; /* Change to white on hover */
+}
